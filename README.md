@@ -1,2 +1,2 @@
 ## introduce
-including kubectl, helm, gomplate
+ docker run --rm --net=host --name ansible -v /root/.kube:/root/.kube -v /root/dsf-cluster-install:/app ansible ansible-playbook /app/ansible/dsf-install.yml -e "config_file=/app/ansible/config-k8s.yaml"
